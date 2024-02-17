@@ -1,9 +1,5 @@
-const breakStatement = require('../ejercicios/18');
+const tablaDelSeis = require('../ejercicios/17');
 
-test('Debe retornar un arreglo con los elementos incrementados en dos', function () {
-  expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
-});
-
-test('La ejecución se debe interrumpir en el caso pedido', function () {
-  expect(breakStatement(-4)).toEqual('Se interrumpió la ejecución');
+test('Debe retornar la tabla de multiplicar del 6 en un arreglo', function () {
+  expect(tablaDelSeis()).toEqual([0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
 });
